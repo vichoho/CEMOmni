@@ -3,7 +3,7 @@ export interface DailyKPI {
   throughputDL: number; // Mbps
   throughputUL: number; // Mbps
   latency: number; // ms
-  videoBuffering: number; // %
+  // videoBuffering: number; // %
   rsrp: number; // dBm
   sinr: number; // dB
   prbUtilization: number; // %

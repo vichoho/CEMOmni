@@ -80,7 +80,7 @@ export const MOCK_DAILY_DATA: DailyKPI[] = getLast7Days().map((date, i) => ({
   throughputDL: Math.round(45 + Math.random() * 15),
   throughputUL: Math.round(8 + Math.random() * 4),
   latency: Math.round(25 + Math.random() * 10),
-  videoBuffering: Math.round(Math.random() * 0.5 * 100) / 100,
+  // videoBuffering: Math.round(Math.random() * 0.5 * 100) / 100,
   rsrp: Math.round(-95 + Math.random() * 15),
   sinr: Math.round(12 + Math.random() * 8),
   prbUtilization: Math.round(60 + Math.random() * 20),
@@ -106,7 +106,7 @@ export const generateMockSubscriberData = (imsi: string, startDate?: string): Da
       throughputDL: Math.round((isGoodUser ? 60 : 20) + pseudoRandom(i) * 20),
       throughputUL: Math.round((isGoodUser ? 15 : 2) + pseudoRandom(i + 100) * 5),
       latency: Math.round((isGoodUser ? 20 : 50) + pseudoRandom(i + 200) * 20),
-      videoBuffering: Math.round(pseudoRandom(i + 300) * 100) / 100,
+      // videoBuffering: Math.round(pseudoRandom(i + 300) * 100) / 100,
       rsrp: Math.round((isGoodUser ? -80 : -105) + pseudoRandom(i + 400) * 10),
       sinr: Math.round((isGoodUser ? 20 : 5) + pseudoRandom(i + 500) * 10),
       prbUtilization: Math.round(40 + pseudoRandom(i + 600) * 40), // User PRB usage (conceptually different but reusing field for view)
